@@ -1,10 +1,14 @@
 // Code for IOS!!!!
 import React from 'react';
-import { AppRegistry } from 'react-native';
+import { AppRegistry, View } from 'react-native';
 import Header from './src/components/header';
+import AlbumList from './src/components/AlbumList';
 
 const App = () => (
-    <Header />
+  <View>
+    <Header headerText={'Albums'} />
+    <AlbumList />
+  </View>
 );
 
 AppRegistry.registerComponent('albums', () => App);
